@@ -6,7 +6,7 @@
 /*   By: cschulle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/10 17:51:38 by cschulle          #+#    #+#             */
-/*   Updated: 2018/12/29 18:39:51 by cschulle         ###   ########.fr       */
+/*   Updated: 2018/12/29 19:59:29 by cschulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,6 @@ void	*ft_memalloc(size_t size)
 	ptr = (void *)malloc(size);
 	if (!ptr)
 		return (NULL);
-	while (i <= size)
-	{
-		ft_memset(ptr + i, 0, size);
-		i++;
-	}
+	ft_bzero(ptr, size);
 	return (ptr);
 }
