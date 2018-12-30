@@ -6,7 +6,7 @@
 /*   By: cschulle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/21 15:08:44 by cschulle          #+#    #+#             */
-/*   Updated: 2018/12/24 18:31:28 by cschulle         ###   ########.fr       */
+/*   Updated: 2018/12/29 18:46:39 by cschulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_itoa(int n)
 	size_t	i;
 
 	i = ft_numlen(n);
-	if (!(numstr = malloc(i + 1)))
+	if (!(numstr = (char *)malloc(i + 1)))
 		return (NULL);
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
