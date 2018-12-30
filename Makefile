@@ -6,7 +6,7 @@
 #    By: cschulle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/30 14:40:39 by cschulle          #+#    #+#              #
-#    Updated: 2018/12/24 18:30:46 by cschulle         ###   ########.fr        #
+#    Updated: 2018/12/29 17:13:07 by cschulle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,7 +85,7 @@ all : $(NAME)
 
 $(NAME) : 
 	@gcc -c -Wall -Wextra -Werror $(SRCS)
-	@ar rc $(NAME) $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 	@echo "$(GREY)<< library created >>$(WHITE)"
 
 clean : 
