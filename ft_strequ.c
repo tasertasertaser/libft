@@ -6,13 +6,13 @@
 /*   By: cschulle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/10 22:58:35 by cschulle          #+#    #+#             */
-/*   Updated: 2018/12/22 15:54:56 by cschulle         ###   ########.fr       */
+/*   Updated: 2018/12/29 18:25:50 by cschulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_strequ(const char *s1, const char *s2)
+int	ft_strequ(char const *s1, const char *s2)
 {
 	int	i;
 
