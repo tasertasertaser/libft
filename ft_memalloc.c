@@ -6,7 +6,7 @@
 /*   By: cschulle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/10 17:51:38 by cschulle          #+#    #+#             */
-/*   Updated: 2018/12/22 19:55:07 by cschulle         ###   ########.fr       */
+/*   Updated: 2018/12/29 18:39:51 by cschulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memalloc(size_t size)
 	size_t	i;
 
 	i = 0;
-	ptr = malloc(size);
+	ptr = (void *)malloc(size);
 	if (!ptr)
 		return (NULL);
 	while (i <= size)
