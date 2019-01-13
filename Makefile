@@ -6,7 +6,7 @@
 #    By: cschulle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/30 14:40:39 by cschulle          #+#    #+#              #
-#    Updated: 2018/12/29 17:13:07 by cschulle         ###   ########.fr        #
+#    Updated: 2019/01/13 15:02:17 by cschulle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ SRCS = ft_memset.c	\
 	ft_strlcat.c	\
 	ft_strncat.c	\
 	ft_strchr.c		\
+	ft_strnchr.c	\
 	ft_strrchr.c	\
 	ft_strstr.c		\
 	ft_strnstr.c	\
@@ -96,12 +97,16 @@ fclean : clean
 	@rm -f $(NAME)
 	@echo "$(GREY)<< library cleaned >>$(WHITE)"	
 
+testclean : fclean
+	@rm -f test main.c
+	@echo "$(GREY)<< test files cleaned >>$(WHITE)"
+
 re : fclean all
 	@echo "$(GREY)<< library rebuilt >>$(WHITE)"
-	
-testfile : re
+
+test : re
 	@gcc -L. libft.a -o test main.c
-	@echo "$(GREY)<< testfile created >>$(WHITE)"
+	@echo "$(GREY)<< testfile compiled >>$(WHITE)"
 
 LLDB : 
 	@gcc -g *.c

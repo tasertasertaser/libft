@@ -6,7 +6,7 @@
 /*   By: cschulle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/30 15:41:07 by cschulle          #+#    #+#             */
-/*   Updated: 2018/12/29 12:57:26 by cschulle         ###   ########.fr       */
+/*   Updated: 2019/01/13 14:42:13 by cschulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,5 +108,6 @@ void	ft_putnode(t_list *node);
 void	ft_putarray(char **array);
 int		ft_wordcount(const char *s, char c);
 int		ft_iswhitespace(int c);
+char	*ft_strnchr(const char *s, int c, size_t n);
 
 #endif
