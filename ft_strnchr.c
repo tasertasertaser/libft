@@ -6,11 +6,11 @@
 /*   By: cschulle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/13 14:38:20 by cschulle          #+#    #+#             */
-/*   Updated: 2019/01/13 14:45:15 by cschulle         ###   ########.fr       */
+/*   Updated: 2019/01/13 15:54:09 by cschulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* 
+/*
 ** searches n bytes of given string for given char
 ** returns pointer to first occurence if found
 ** returns NULL pointer if not found
