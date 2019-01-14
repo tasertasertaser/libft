@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnjoin.c                                      :+:      :+:    :+:   */
+/*   ft_strcjoin.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cschulle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/13 15:37:25 by cschulle          #+#    #+#             */
-/*   Updated: 2019/01/13 15:44:19 by cschulle         ###   ########.fr       */
+/*   Created: 2019/01/13 18:51:30 by cschulle          #+#    #+#             */
+/*   Updated: 2019/01/13 18:51:35 by cschulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnjoin(char const *s1, char const *s2, char c)
+char	*ft_strcjoin(char const *s1, char const *s2, char c)
 {
 	char	*fresh;
 	size_t	i;

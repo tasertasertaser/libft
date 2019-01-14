@@ -6,7 +6,7 @@
 /*   By: cschulle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/30 15:41:07 by cschulle          #+#    #+#             */
-/*   Updated: 2019/01/13 15:49:36 by cschulle         ###   ########.fr       */
+/*   Updated: 2019/01/13 18:52:42 by cschulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,5 +109,5 @@ void	ft_putarray(char **array);
 int		ft_wordcount(const char *s, char c);
 int		ft_iswhitespace(int c);
 char	*ft_strnchr(const char *s, int c, size_t n);
-char	*ft_strnjoin(char const *s1, char const *s2, char c);
+char	*ft_strcjoin(char const *s1, char const *s2, char c);
 #endif
