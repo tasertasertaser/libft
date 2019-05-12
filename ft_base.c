@@ -16,17 +16,18 @@
 **                          10 11 12 13 14 15
 **
 **	Converting 348 to Hexadecimal
-**                      remainder
-**                      ▾   symbol (reverse these!)
-**                      ▾   ▾
+**                  remainder
+**                  ▾   symbol (reverse these!)
+**                  ▾   ▾
 **	348 / 16 = 21 | 12  C
 **	 21 / 16 =  1 | 5   5
 **	  1 / 16 =  0 | 1   1
 **
 ** 	348 base 10 = 15C base 16
 **
-**	note: intmax in base 2 is 16 digits,
-**		so max string length is 17 chars when null term'd.
+**	note: intmax in base 2 is 32 digits,
+**		so max string length is 33 chars when null term'd.
+**	This function WILL BREAK when passed an int greater than 32-bit intmax.
 */
 
 #include "libft.h"
@@ -37,10 +38,10 @@ char	*ft_base(int num, int base)
 	char	*tmp;
 	char	*converted;
 
-	if (!(tmp = (char *)malloc(sizeof(char) * 17)))
+	if (!(tmp = (char *)malloc(sizeof(char) * 33)))
 		return (NULL);
-	tmp[16] = '\0';
-	i = 15;
+	tmp[32] = '\0';
+	i = 31;
 	while (num > 0)
 	{
 		if (num % base <= 9)
