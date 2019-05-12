@@ -12,15 +12,15 @@
 
 /*
 **	How Hexadecimal Works
-**	0 1 2 3 4 5 6 7 8 9  A  B  C  D  E  F
-**                      10 11 12 13 14 15
+**      0 1 2 3 4 5 6 7 8 9  A  B  C  D  E  F
+**                          10 11 12 13 14 15
 **
 **	Converting 348 to Hexadecimal
-**	                remainder
-**					▾	symbol (reverse these!)
-**					▾   ▾
-**	348 / 16 = 21 | 12	C
-**	 21 / 16 =  1 | 5	5
+**                      remainder
+**                      ▾   symbol (reverse these!)
+**                      ▾   ▾
+**	348 / 16 = 21 | 12  C
+**	 21 / 16 =  1 | 5   5
 **	  1 / 16 =  0 | 1   1
 **
 ** 	348 base 10 = 15C base 16
