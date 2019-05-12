@@ -10,7 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+/*
+**	Creates & allocates a new, null-terminated string of the given size.
+**	All characters are initialized to '\0'.
+**	Null-terminator is an additional char,
+**		which means ft_strnew(5) will return a string of 6 '\0' char.
+*/
+
+#include "libft.h"
 
 char	*ft_strnew(size_t size)
 {

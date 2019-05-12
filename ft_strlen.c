@@ -10,7 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+/*
+**	Measures the length of a string up to its null terminator ('\0').
+*/
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

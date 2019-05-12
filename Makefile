@@ -6,7 +6,7 @@
 #    By: cschulle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/30 14:40:39 by cschulle          #+#    #+#              #
-#    Updated: 2019/01/13 18:53:24 by cschulle         ###   ########.fr        #
+#    Updated: 2019/05/10 16:42:53 by cschulle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,6 +79,8 @@ SRCS = ft_memset.c	\
 	ft_putarray.c	\
 	ft_wordcount.c	\
 	ft_strcjoin.c	\
+	ft_round.c		\
+	ft_base.c 		\
 	ft_iswhitespace.c
 
 OBJS = $(SRCS:%.c=%.o)

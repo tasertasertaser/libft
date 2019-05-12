@@ -6,7 +6,7 @@
 /*   By: cschulle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/30 15:41:07 by cschulle          #+#    #+#             */
-/*   Updated: 2019/01/13 18:52:42 by cschulle         ###   ########.fr       */
+/*   Updated: 2019/05/10 16:34:27 by cschulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+
+# define MIN(a,b) a > b ? b : a
+# define MAX(a,b) a > b ? a : b
 
 typedef struct s_list	t_list;
 struct	s_list
@@ -110,4 +113,6 @@ int		ft_wordcount(const char *s, char c);
 int		ft_iswhitespace(int c);
 char	*ft_strnchr(const char *s, int c, size_t n);
 char	*ft_strcjoin(char const *s1, char const *s2, char c);
+int		ft_round(double num);
+char	*ft_base(int num, int base);
 #endif
